@@ -448,7 +448,7 @@ class Tpv
                 <input type="hidden" name="Ds_MerchantParameters" value="'.$this->generateMerchantParameters().'"/>
                 <input type="hidden" name="Ds_Signature" value="'.$this->_setSignature.'"/>
                 <input type="hidden" name="Ds_SignatureVersion" value="'.$this->_setVersion.'"/>
-                <input type="submit" name="'.$this->_setNameSubmit.'" id="'.$this->_setIdSubmit.'" value="'.$this->_setValueSubmit.'" style="'.$this->_setStyleSubmit.'" >
+                <script type="text/javascript">document.getElementById("' . $this->_setIdForm . '").submit();</script>
             </form>
         ';
 
